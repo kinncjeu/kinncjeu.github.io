@@ -456,7 +456,7 @@ No! Bullets.
 
 * The exam changes were substantially necessary to give more quality professionals to the IT market
 * PHP is not only a programming language, it's a complete ecosystem with Security, Infrastructure, Storage, DOM, Patterns and the other 100000 PHP related subjects
-* Developer should be challenged within logical questions
+* Developers should be challenged with logical questions
 * That's a __must do__ exam to all PHP developers!
 * It reflects a PHP developer's daily basis routine
 * In the end, it is a personal satisfaction that has no description
