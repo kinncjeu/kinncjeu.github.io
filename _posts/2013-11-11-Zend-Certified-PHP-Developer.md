@@ -176,7 +176,7 @@ And it's just the beginning of the exam.
 The exam covers the following contents:
 
 
-__ PHP Basics__
+__PHP Basics__
 
 * Operators
 * Variables
