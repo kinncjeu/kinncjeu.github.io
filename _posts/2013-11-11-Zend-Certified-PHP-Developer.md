@@ -98,7 +98,7 @@ ________________________
 
 And as you can see, it's an Open question... no Options to guess!
 
-E can get more complex samples, as code samples:
+It can get more complex samples, as code samples:
 
 ```php
 Which classes should be declared as abstract?
