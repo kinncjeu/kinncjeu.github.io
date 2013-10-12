@@ -4,12 +4,12 @@ title: New Zend certification - Zend Certified PHP Developer (5.5)
 categories: [Development]
 tags: [PHP, ZCE, ZCPD, Certification]
 ---
-### The first batch of ZCPD (Zend Certified PHP Developer) exam
+# The first batch of ZCPD (Zend Certified PHP Developer) exam
 
-#### First things first
+## First things first
 __Zend Certified PHP Developer__, is the new version of __Zend Certified Engineer__ exam based on PHP 5.5
 
-#### The old exams
+## The old exams
 Every PHP developer that has already been submitted to the older versions of the exam, notice that all the ZCE exams have almost the same structure:
 
 * Questions about PHP.ini
@@ -46,7 +46,7 @@ It's kind anoying since the questions are not really related to a _PHP developer
 
 There are some challenging questions as well about _security_, _code analysis_, even _Spl_ ... but they are not enought compared to questions like the example.
 
-#### First impressions
+## First impressions
 
 Once you start the _new_ exam, you can slightly feel the diference related to the questions...
 
@@ -55,6 +55,7 @@ Now, the questions are __PHP developer daily bases__ questions... they are more 
 We are talking about a real __PHP Engineer__ exam (and now, they remove the engineer from the name), we are talking about an exam that covers all the PHP ecosystem.
 
 Questions about: 
+
 * PHP.ini
 * The language by it self
 * DOM
@@ -66,10 +67,11 @@ Questions about:
 
 As you can see, now the exam can cover since _String operators_, going through DOM manipulation to an Observer Pattern... and that is exactly what happens!
 
-#### Is the exam getting __seniority__ as the PHP developers are?
+## Is the exam getting __seniority__ as the PHP developers are?
 
 When you open your exam, you will still getting questions as:
-```
+
+```php
 Which function can be used to get the length of a given string?
 
 (a) string_length
@@ -87,7 +89,7 @@ For some people, that really use PHP as your daily tool, it can be an easy thing
 
 Sample:
 
-```
+```php
 Which Spl interface can be used alongside with SplObserver to implement the Observer Pattern?
 
 ________________________
@@ -100,6 +102,8 @@ E can get more complex samples, as code samples:
 
 ```php
 Which classes should be declared as abstract?
+
+<?php
 
 class A extends D {
  public function myFunctionY() {}
@@ -132,6 +136,7 @@ Even tricks based on the new version of the PHP, 5.5
 What's the output of the following code.
 
 <?php
+
 namespace MyAwesomeFramework\MyAwesomeExceptions;
 
 class MyException(){ 
@@ -166,7 +171,7 @@ try {
 
 And it's just the beginning of the exam.
 
-#### Ok, what's the content of the exam?
+## Ok, what's the content of the exam?
 
 The exam covers the following contents:
 
@@ -290,23 +295,24 @@ __Arrays__
 * SPL, Objects as arrays
 * Casting
 
-```
+```php
 As you can see, it's almost the same table of contents of version 5.3.
 The differences are: The quality of questions
 ```
 
-#### PHP 5.5, your features
+## PHP 5.5, your features
 
 The features are the moast important thing, since the exam is based on PHP 5.5.
 But, in general they are not too much compared to the whole php context and ecosystem at all, covered by the exam.
 
 So, let's talk about the new features.
 
-###### Finally
+#### Finally
 
 Finally allows developers run code at the end of try and catch blocks, regardless of whether an exception was thrown or not, before the normal execution flow resumes.
 
 Without the finally keyword, developers were sometimes be forced to repeat code within both the try and catch blocks to handle cleanup tasks. For example:
+
 ```php
 <?php
 function someDbOperation() {
@@ -327,7 +333,9 @@ function someDbOperation() {
     }
 }
 ```
-With the finally keywork, we can eliminate the duplicated code:
+
+_With the finally keywork, we can eliminate the duplicated code_
+
 ```php
 function someDbOperation() {
     $resource = mysqli(/* ... */);
@@ -346,8 +354,9 @@ function someDbOperation() {
 }
 ```
 
-###### Array and String Dereferencing
+#### Array and String Dereferencing
 Array and string can be dereferenced using array access syntax:
+
 ```php
 <?php
 // array dereferencing
@@ -360,14 +369,16 @@ echo "Manolo"[3]; // "n"
 echo ":;!@#$%^&*()abcdefshijkm"[mt_rand(0, 16)];
 ```
 
-###### Generators
+#### Generators
 Generators are one of the most expected new features. They provide a way to _iterate_, without having to write a class implementing the Iterator interface. Implement the Iterator interface requires a substantial amount of boilerplate code; to be able to avoid this, generators can significantly reduce the size and complexity of code.
 
 __A generator is much like a function, but instead of returning a single value, a generator can produce any number of values​ with the ​_yield_ keyword.__
 
 Sample:
+
 ```php
 <?php
+
 function xrange($start, $end) {
     for ($i = $start; $i < $end; $i ++) {
         yield $i;
@@ -379,17 +390,19 @@ foreach (xrange(0, 666666) as $number) {
 }
 ```
 
-###### Class Name Resolution
+#### Class Name Resolution
 Since PHP 5.3 and __namespaces__, it's common to use extensive and descritive namespaces to organize the code.
 And with this, we increased the difficult to get a full-qualified class name as a String.
+
 ```php
 <?php
+
 use MyAwesomeNamespace\MyAwesomeClass;
  
 $reflection = new \ReflectionClass(MyAwesomeClass::class); // Simple!
 ```
 
-###### Password Hashing
+#### Password Hashing
 Password hashing API is one of the most important and useful features of PHP 5.5.
 
 The API introduces two new functions, __password_hash()__ and __password_verify()__.
@@ -398,16 +411,22 @@ Calling __password_hash($password, PASSWORD_DEFAULT)__ will give you a hash usin
 
 The API uses bcrypt by default, but new algorithms may be introduced to provide even more secure methods of hashing. Developers can specify their own bcrypt work factor to adjust the strength of the hashes produced, and can also use their own salts instead of the automatic salt generation (the manual discourages this).
 
-###### empty
+#### empty
 Now, the __empty__ construct can be used with function calls and expressions
+
 ```php
+<?php
+
 empty( myFunction() );
 empty( $object->someMethod() );
 ```
 
-###### foreach
+#### foreach
 Now, it's possible to use the _list_ constructor with a foreach loop
+
 ```php
+<?php
+
 $userList = [
 	["Manolo", "Developer"],
 	["Manola", "Project Manager"]
@@ -420,18 +439,18 @@ foreach ($userList as list($name, $position)) {
 
 And that's are the moast significant improvements of the 5.5 versions.
 
-###### Where are all the possible new features?
+#### Where are all the possible new features?
 You can check this two links:
 
 * [PHP 5.5 Features ](http://php.net/manual/en/migration55.new-features.php "PHP 5.5. Features")
 * [PHP 5.5 Functions ](http://php.net/manual/en/migration55.new-functions.php "PHP 5.5. Functions")
 
-#### Conclusions... conclusions ?
+## Conclusions... conclusions ?
 
 No! Bullets.
 
 
-###### The exam
+#### The exam
 
 * The exam changes were substantially necessary to give more quality professionals to the IT market
 * PHP is not only a programming language, it's a complete ecosystem with Security, Infrastructure, Storage, DOM, Patterns and the other 100000 PHP related subjects
@@ -440,7 +459,7 @@ No! Bullets.
 * It reflects a PHP developer's daily basis routine
 * In the end, it is a personal satisfaction that has no description
 
-###### PHP 5.5
+#### PHP 5.5
 
 * As any other PHP versions, the improvements are huge
 * As any other PHP versions, the improvements help the code development a lot
