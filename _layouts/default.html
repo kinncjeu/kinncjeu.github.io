@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>kinncj</h1>
+        <p>“Try not. Do… or do not. There is no try.”</p>
+      </header>
+
+      <div id="banner">
+        <a href="http://github.com/kinncj" target="_blank"><span id="logo"></span></a>
+
+        <a href="http://about.me/kinncj" target="_blank" class="button fork"><strong>About me</strong></a>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+      	{% for post in paginator.posts do %}
+      		<h3>
+				<a name="welcome-to-github-pages" class="anchor" href="{{ post.url }}">
+					<span class="octicon octicon-link">{{ post.title }}</span>
+				</a>
+			</h3>
+			{{ post.content | truncatewords:60}}<br>
+            <a href="{{ post.url }}">Read more...</a>	
+		{% endfor %}
+		<hr />
+		<!-- Pagination links -->
+		<div id="post-pagination" class="pagination">
+		  {% if paginator.previous_page %}
+		      {% if paginator.previous_page == 1 %}
+		        <a class="previous" href="/">Previous</a>
+		      {% else %}
+		        <a class="previous" href="{{ paginator.previous_page_path }}">Previous</a>
+		      {% endif %}
+		  {% else %}
+		      <span class="previous disabled">Previous</span>
+		  {% endif %}
+	      {% if paginator.page == 1 %}
+	        <span class="current-page">1</span>
+	      {% else %}
+	        <a href="/">1</a>
+	      {% endif %}
+
+		    {% for count in (2..paginator.total_pages) %}
+		        {% if count == paginator.page %}
+		          <span class="current-page">{{ count }}</span>
+		        {% else %}
+		          <a href="/page{{ count }}">{{ count }}</a>
+		        {% endif %}
+		    {% endfor %}
+
+		  {% if paginator.next_page %}
+		      <a class="next" href="{{ paginator.next_page_path }}">Next</a>
+		  {% else %}
+		      <span class="next disabled">Next</span>
+		  {% endif %}
+
+		</div>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-31020088-2");
+		pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+
+  </body>
+</html>
