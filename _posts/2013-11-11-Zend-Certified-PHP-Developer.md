@@ -4,7 +4,7 @@ title: New Zend certification - Zend Certified PHP Developer (5.5)
 categories: [Development]
 tags: [PHP, ZCE, ZCPD, Certification]
 ---
-# The first batch of ZCPD (Zend Certified PHP Developer) exam
+# The impressive Zend Certified PHP Developer exam
 
 ## First things first
 __Zend Certified PHP Developer__, is the new version of __Zend Certified Engineer__ exam based on PHP 5.5
