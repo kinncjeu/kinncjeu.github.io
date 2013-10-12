@@ -337,6 +337,8 @@ function someDbOperation() {
 _With the finally keywork, we can eliminate the duplicated code_
 
 ```php
+<?php
+
 function someDbOperation() {
     $resource = mysqli(/* ... */);
     try {
