@@ -1,8 +1,9 @@
 ---
 layout: post
-title: New Zend certification - Zend Certified PHP Developer
+title: New Zend certification - Zend Certified PHP Developer (5.5)
+categories: [Development]
+tags: [PHP, ZCE, ZCPD, Certification]
 ---
-
 ### The first batch of ZCPD (Zend Certified PHP Developer) exam
 
 #### First things first
