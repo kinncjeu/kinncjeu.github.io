@@ -79,9 +79,9 @@ $ curl -XPUT 'http://localhost:9200/automobiles/car?ttl=1d' -d '{
 }'
 ```
 
-## Nestead Objects
+## Nested Objects
 
-Following the idea that _I CAN map_ a Document, but _I DON'T NEED_, we will create a nested object without mapping to perform a nestead object search
+Following the idea that _I CAN map_ a Document, but _I DON'T NEED_, we will create a nested object without mapping to perform a nested object search
 
 ```php
 $ curl -XPOST 'http://localhost:9200/users/user' -d '{
