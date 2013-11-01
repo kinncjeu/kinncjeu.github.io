@@ -215,10 +215,10 @@ Not only me, but __cool__ companies around the _Globe_, as:
  * GitHub     - 20TB of Data using ElasticSearch, including 1.3 billion files and 130 billion lines of code
  * etc
 
- So, are you gonna spend your time tunning and enhancing queries on your Solr/Sphinx/WhatEver? Or will you try to give a chance to __ES__ as GitHub, FourSquare and other _cool companies_ did?
+So, are you gonna spend your time tunning and enhancing queries on your Solr/Sphinx/WhatEver? Or will you try to give a chance to __ES__ as GitHub, FourSquare and other _cool companies_ did?
 
- ## What is coming up?
+## What is coming up?
 
- Maybe in the next time, I'll try to talk a little about GeoLocation query, Range query, _more like this_ query and other _cool_ features of __ES__
+Maybe in the next time, I'll try to talk a little about GeoLocation query, Range query, _more like this_ query and other _cool_ features of __ES__
 
- Thanks!
+Thanks!
