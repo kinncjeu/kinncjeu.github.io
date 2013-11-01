@@ -217,7 +217,7 @@ Not only me, but __cool__ companies around the _Globe_, as:
 
  So, are you gonna spend your time tunning and enhancing queries on your Solr/Sphinx/WhatEver? Or will you try to give a chance to __ES__ as GitHub, FourSquare and other _cool companies_ did?
 
- ## Whats comming up?
+ ## What is coming up?
 
  Maybe in the next time, I'll try to talk a little about GeoLocation query, Range query, _more like this_ query and other _cool_ features of __ES__
 
