@@ -133,7 +133,7 @@ $ curl -XPOST 'http://localhost:9200/users/user' -d '{
 ## Searching
 
 Now, we will be able to perform a search in a node of the Nested object _WITHOUT MAPPING_
-Isn't it fucking crazy? Yeah, it it!
+Isn't it fucking crazy? Yeah, it is!
 
 ```php
 $ curl -XPOST 'http://localhost:9200/users/user/_search' -d '{
