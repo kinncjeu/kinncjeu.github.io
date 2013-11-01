@@ -1009,11 +1009,10 @@ footer {
   }
 }
 
-.avatar {
+.picture-box {
   width: 190px;
   height: 272px;
   margin: -6.6% 0 0 -32%;
-  background: url("http://kinncj.github.io/assets/logo.png");
   text-indent: -99999px;
   position: absolute;
   -webkit-border-radius: 6px;
@@ -1025,12 +1024,34 @@ footer {
   box-shadow: #A6A6A6 2px 2px 2px;
 }
 
-.avatar.right {
+.picture-box.right {
   margin: -6.6% 0 0 +92%;
+  width: 160px;
+  height: 600px;
 }
 
 @media print, screen and (max-width: 1020px) {
-  .avatar {
+  .picture-box {
     display: none;
   }
 }
+
+.avatar, .ffOs {
+    height: 272px;
+    background-repeat: no-repeat;
+}
+
+.avatar {
+      width: 190px;
+      background: url("http://kinncj.github.io/assets/logo.png");
+}
+
+.ffOs {
+  background: url("http://affiliates.mozilla.org/media/uploads/banners/b532684a5bcea6d94bca7527237bc8645d96dcf2.png");
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+
+
+
