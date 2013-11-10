@@ -439,7 +439,7 @@ foreach ($userList as list($name, $position)) {
 }
 ```
 
-And that's are the moast significant improvements of the 5.5 versions.
+And that's are the most significant improvements of the 5.5 versions.
 
 #### Where are all the possible new features?
 You can check this two links:
